@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GNext App Download</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.replace("https://apps.apple.com/it/app/inserisci_id_gnext");
+            } 
+            else if (/android/i.test(userAgent)) {
+                window.location.replace("https://play.google.com/store/apps/details?id=inserisci_package_gnext");
+            } 
+            else {
+                window.location.replace("https://inserisci_sito_azienda.com");
+            }
+        };
+    </script>
+</head>
+<body>
+    <p>Reindirizzamento allo store in corso...</p>
+</body>
+</html>
